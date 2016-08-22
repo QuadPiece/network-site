@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 22px;
+}
+
+small {
+  font-size: 0.75em;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 6px rgba(0,0,0,0.2);
+}
+
+.header * {
+  vertical-align: middle;
+  padding: 20px;
+}
+
+.fontzero {
+  font-size: 0;
+}
+
+.block {
+  width: 100%;
+  padding: 35px;
+  text-align: center;
+}
+
+.block .left, .block .right {
+  display: inline-block;
+  padding: 5px;
+  width: 50%;
+  font-size: 24px;
+  vertical-align: middle;
+  max-width: 500px;
+}
+
+.block .left {
+  text-align: center;
+}
+
+.iconblock {
+  width: 300px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.iconblock .fa {
+  font-size: 80px;
+}
+
+.icon-oversized {
+  font-size: 200px;
+}
+
+@media screen and (max-width: 800px) {
+    .block .left, .block .right {
+      width: 100%;
+      font-size: 24px;
+    }
+
+  body {
+    font-family: "Droid Sans", sans-serif;
+    font-size: 26px;
+  }
+}
+
+/* Tables, ugh */
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 600px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  max-width: 100%;
+}
+
+thead {
+  font-weight: 700;
+  color: #FF3030;
+  border-bottom: 1px solid #000;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+tbody, tr {
+  width: 100%;
+}
+
+td {
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 33%;
+}
+
+@media screen and (max-width: 800px) {
+    table {
+      width: 400px;
+      font-size: 80%;
+    }
+}
+
+/* Backgrounds */
+
+.black-bg {
+  background-color: #1d1d1d;
+  color: #ffffff;
+}
+
+.red-bg {
+  background-color: #ff6633;
+  color: #ffffff;
+}
+
+.green-bg {
+  background-color: #33aa33;
+  color: #ffffff;
+}
+
+.blue-bg {
+  background-color: #3333ff;
+  color: #ffffff;
+}
+
+/* Top style */
+
+.top {
+  text-align: center;
+  color: #ffffff;
+  height: 100vh;
+  background-image: url('../img/forest.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.top .container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.title {
+  font-size: 2em;
+}
+
+/* Footer style */
+
+.footer {
+  color: #777777;
+  font-size: 50%;
+}
+
+.blockflow {
+  width: 90%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 0;
+}
+
+.blockflow .item {
+  width: 150px;
+  height: 150px;
+  font-size: 16pt;
+  display: inline-block;
+  color: #FFF;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+.blockflow .item .box {
+  background-color: rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.1) inset;
+  text-shadow: 0 0 0 rgba(0,0,0,0);
+  transition: all 0.5s ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+
+.blockflow .item .box:hover {
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5) inset;
+  text-shadow: 0px 0px 2px rgba(0,0,0,1);
+  background-color: rgba(0,0,0,0.15);
+}
+
+.blockflow .item .box p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
